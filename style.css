@@ -39,6 +39,7 @@ body {
 
 .sitebar {
     width: 320px;
+    height: 1024px;
     box-shadow: 0px 0px 40px 0;
 
 }
@@ -81,7 +82,7 @@ body {
     white-space: nowrap;
     padding: 15px;
     margin: 10px 0;
-    gap: 200px;
+    gap: 300px;
 }
   
 .sitebar__main__menu__container {
