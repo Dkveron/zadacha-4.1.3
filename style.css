@@ -39,16 +39,14 @@ body {
 
 .sitebar {
     width: 320px;
-    height: 1024px;
+    height: 100vh;
     box-shadow: 0px 0px 40px 0;
-
+    overflow-y: auto;
 }
   
 .sitebar__header__menu {
     display: flex;
     justify-content: space-between;
-    
-    padding: 10px 0;
     padding: 15px;
     gap: 20px;
 }
@@ -80,9 +78,8 @@ body {
     display:flex;
     flex-direction: column;
     white-space: nowrap;
-    padding: 15px;
     margin: 10px 0;
-    gap: 300px;
+    gap: 100px;
 }
   
 .sitebar__main__menu__container {
@@ -92,10 +89,8 @@ body {
 }
 .sitebar__main__menu__container__item {
     flex: 0 0 auto;
-    padding: 8px 13px;
+    padding: 8px 28px;
     background-color: white;
- 
-    border-radius: 5px;
     white-space: nowrap;
     cursor: pointer;
     font-family: "TT Lakes";
@@ -108,20 +103,24 @@ body {
     border: none;
 }
 
+.sitebar__main__menu__container__item--active {
+    border-left: 5px solid #41F6D7;
+    padding-left: 20px;
+}
+
 .sitebar__main__menu__container__item:hover {
     background-color: #f5f5f5;
-  }
-/* .sitebar__main__menu__container__item--active {
-    
-} */
+}
 
 .sitebar__main__menu__footer {
+    margin-top: auto;
     display: flex;
     gap: 50px;
 }
 
 .sitebar__main__menu__footer-button {
    padding: 10px;
+   padding-left: 25px;
 }
 
 .sitebar__main__menu__footer__contact-mail {
@@ -133,18 +132,20 @@ body {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;   
     padding: 10px; 
+    padding-left: 25px;
 }
 
 .sitebar__main__menu__footer__contact-phone{
-font-family: TT Lakes;
-font-size: 24px;
-font-weight: bold;
-line-height: 32px;
-letter-spacing: -0.6000000238418579px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-padding: 10px;
+    font-family: TT Lakes;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 10px;
+    padding-left: 25px;
 }
 
 .sitebar__main__menu__footer__lang {
@@ -157,17 +158,10 @@ padding: 10px;
     width: 25px;
     height: 25px;
     padding: 10px; 
+    padding-left: 25px;
 }
 
 .sitebar__main__menu__footer__lang__botton--active,
 .sitebar__main__menu__container__item--active {
     opacity: 0.6;
 }
-
-.sitebar__main__menu__container__item--active img {
-    position: absolute;
-    left: 0;
-    top: 115px;
-}
-
-  
